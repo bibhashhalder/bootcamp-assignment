@@ -5,7 +5,7 @@ const app: Application = express();
 // parsers
 app.use(express.json());
 app.use(cors());
-app.use('/api/products', mainRouter)
+app.use('/api/v1/products', mainRouter)
 app.use('/api/orders', mainRouter)
 const getController = (req: Request, res: Response) => {
   res.send("This server is runing now");
